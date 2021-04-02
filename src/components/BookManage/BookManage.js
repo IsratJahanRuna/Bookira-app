@@ -22,7 +22,7 @@ const BookManage = ({ book }) => {
                 <div class="table-responsive">
                     <tbody>
                         <td className="w-25">{book.name}</td>
-                        <td className="w-25">{book.quantity}</td>
+                        <td className="w-25">{book.writer}</td>
                         <td className="w-25">${book.price}</td>
                         <td className="w-25"><img src={book.imageURL} style={{ height: "80px" }} alt="" /></td>
                         <td className="w-25">
