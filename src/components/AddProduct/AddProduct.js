@@ -14,7 +14,7 @@ const [imageURL, setImageURL] = useState(null);
             price: data.price,
             imageURL: imageURL
         };
-        const URL = `http://localhost:4200/addBook`
+        const URL = `https://secure-bastion-32393.herokuapp.com/addBook`
         console.log(data);
         fetch(URL,{
             method: 'POST',

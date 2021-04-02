@@ -5,7 +5,7 @@ import Books from '../Books/Books';
 const Homepage = () => {
     const [books ,setBooks] = useState([])
     useEffect(()=>{
-        fetch(`http://localhost:4200/events`)
+        fetch(`https://secure-bastion-32393.herokuapp.com/events`)
         .then(res =>res.json())
         .then(data => setBooks(data))
     },[])

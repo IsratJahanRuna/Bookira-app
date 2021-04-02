@@ -20,7 +20,7 @@ const Checkout = () => {
     });
     const [books,setBooks] = useState({})
     useEffect(()=>{
-        fetch(`http://localhost:4200/events/${id}`)
+        fetch(`https://secure-bastion-32393.herokuapp.com/events/${id}`)
         .then(res=> res.json())
         .then(data => setBooks(data))
         console.log(books)
@@ -45,7 +45,7 @@ const Checkout = () => {
             name: name,
             imageURL:imageURL
         }
-      fetch(`http://localhost:4200/buyBook`,{
+      fetch(`https://secure-bastion-32393.herokuapp.com/buyBook`,{
           method: "POST",
           headers: {'Content-Type':'application/json'},
           body: JSON.stringify(bookInfo)
